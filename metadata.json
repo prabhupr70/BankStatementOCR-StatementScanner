@@ -1,0 +1,5 @@
+{
+  "name": "Statement Scanner",
+  "description": "Extract financial transactions from images and PDFs using Gemini AI. Exports clean CSV data for spreadsheets.",
+  "requestFramePermissions": []
+}
