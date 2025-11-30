@@ -1,0 +1,63 @@
+Google AI Studio: Build, Test & Deploy a Real AI App (Full Guide)
+=================================================================
+https://www.youtube.com/watch?v=Lnkv0-GLU3w
+
+
+
+Below notes are all the Prompt text used, as per the Video
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The goal is to build a bank statement OCR system. It takes images and PDF files as input and extracts the information. The extracted data is then put into a CSV format. The CSV file contains:
+- Transaction date
+- Transaction title or description
+- The amount
+- Any notes about the transactions
+
+
+
+
+Build a bank statement OCR tool:
+INPUT: Upload PDF/image bank statement
+OUTPUT: CSV table with these columns:
+| Date | Description | Amount | Category | Notes | 
+
+REQUIREMENTS:
+Use Gemini 2.0 Flash Vision to extract ALL transactions
+Date format: YYYY-MM-DD
+Amount: positive for deposits, negative for expenses
+Category: auto-detect (groceries, dining, transport, salary, bills, etc.)
+Handle multiple-page PDFs
+Skip header, totals, non-transaction rows
+Output clean csv ready to copy-paste into Google sheets
+
+Provide extraction code with clear instructions
+
+
+For the extracted transaction table, I want to show exactly how much is being spent in this transaction or this transaction table. 
+I want to be able to see how many records we have for all the transactions, as well as the total spending and the total income from this statement.
+Create a section that shows this based on the calculation that we have instead of a table.
+
+
+When I copy to the CSV using the "copy to CSV" button, here is what the format looks like after I paste it. 
+Can you be able to format the CSV format here to make it fit for all the columns and all the cells inside of our Google Sheets?
+
+
+Please add functionality that allows users to upload multiple PDF or PNG files, or multiple image files of PDF files to analyze the entire bank statements.
+
+
+
+I want to implement a feature where it can show the progress of file processing. Specifically, I want to display:
+- The total number of files being loaded.
+- The number of files currently pending.
+- The number of files that have been completed.
+This would be more informative than just showing a spinning icon, which might lead users to believe the system is stalled or in a non- responsive state. 
+This enhanced visibility would allow users to see precisely how many files have been processed and which ones are still waiting to be processed.
+
+
+Note: This was NOT implemented
+==============================
+Implement more robust error handling for file conversion in 'utils/fileUtils.ts'. 
+Currently, if a single PDF page fails to render or convert, it might cause the entire process to halt or lead to unexpected results. 
+Add specific try-catch blocks around the page rendering and canvas operations within 'pdfToImageParts'. 
+If an error occurs for a specific page, log a warning for that page but allow the conversion of other pages to proceed. 
+Update 'App.tsx' to provide more granular feedback to the user if some files or pages within a file could not be processed.
+
