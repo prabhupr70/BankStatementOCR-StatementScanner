@@ -3,6 +3,16 @@ Google AI Studio: Build, Test & Deploy a Real AI App (Full Guide)
 https://www.youtube.com/watch?v=Lnkv0-GLU3w
 
 
+Google Project on https://aistudio.google.com/
+==============================================
+https://aistudio.google.com/apps/drive/12c1Nfgyorhb8cftTdRxa-kPpwYpAqaAa?source=&showAssistant=true&resourceKey=&showPreview=true
+https://aistudio.google.com/apps/drive/12c1Nfgyorhb8cftTdRxa-kPpwYpAqaAa?showPreview=true&showAssistant=true
+
+
+Statement Scanner -  Goal is to build a bank statement (AI Studio Project)
+===========================================================================
+https://docs.google.com/spreadsheets/d/11xZemSLvub_3v3RWgybsjJBC-JiBwzJJIBdQGIZjh8I/edit?gid=0#gid=0
+
 
 Below notes are all the Prompt text used, as per the Video
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
